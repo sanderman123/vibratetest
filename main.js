@@ -4,7 +4,7 @@ $(document).ready(function(){
 		if(target.is("div")){
 			target.fadeOut("slow",function(){						
 			});
-			navigator.notification.vibrate(2500);
+			navigator.notification.vibrate(500);
 		} else {
 			$("div").fadeIn("slow");	
 		}
