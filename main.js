@@ -4,13 +4,9 @@ $(document).ready(function(){
 		if(target.is("div")){
 			target.fadeOut("slow",function(){						
 			});
-			vibrate(2000);
+			navigator.notification.vibrate(2500);
 		} else {
 			$("div").fadeIn("slow");	
 		}
 	})			
 });
-
-function vibrate(milliseconds){
-	navigator.notification.vibrate(milliseconds);
-}
